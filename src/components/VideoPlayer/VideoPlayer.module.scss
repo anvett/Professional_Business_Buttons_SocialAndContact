@@ -1,0 +1,64 @@
+// @import "../../styles/variables.scss";
+
+// .videoContainer {
+//   .row {
+//     justify-content: center;
+//   }
+
+//   .videoIframe {
+//     padding-top: $spacing-6;
+//     padding: $spacing-4;
+//     width: 100%;
+//     height: 700px;
+
+//     @media (max-width: 768px) {
+//       height: 500px;
+      
+//     }
+//   }
+// }
+
+// @import "../../styles/variables.scss";
+
+// .videoContainer {
+//   .row {
+//     justify-content: center;
+//   }
+
+//   .videoIframe {
+//     padding-top: $spacing-6;
+//     width: 100%;
+//     height: auto; // Cambia a auto para mantener la relación de aspecto
+//     aspect-ratio: 16 / 9; // Ajusta esto según las relaciones de aspecto más comunes que recibes
+
+//     @media (max-width: 768px) {
+//       height: auto;
+//       padding-top: $spacing-4; // Ajusta el padding para tamaños más pequeños
+//     }
+//   }
+// }
+
+@import "../../styles/variables.scss";
+
+.videoContainer {
+  .row {
+    justify-content: center;
+  }
+
+  .videoWrapper {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9; // Efecto visual para indicar interactividad
+    }
+  }
+
+  .videoIframe {
+    width: 100%;
+    height: auto; // Mantén la relación de aspecto
+    aspect-ratio: 16 / 9;
+
+    @media (max-width: 768px) {
+      padding-top: $spacing-4;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-color;
+
+  .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .navbarLogo {
+    border-radius: 50%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-2;
+  }
+
+  .navLink {
+    color: $primary-color;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &:hover {
+      color: $light-color; // Cambio de color al pasar el mouse
+      transform: translateY(-2px); // Efecto de elevación al pasar el mouse
+      text-decoration: none;
+    }
+  }
+}

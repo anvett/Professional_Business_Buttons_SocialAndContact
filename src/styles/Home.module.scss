@@ -1,0 +1,203 @@
+@import "../styles/variables.scss";
+
+// ---------------------------------------------
+// Main container
+// ---------------------------------------------
+.mainContainer {
+  min-height: calc(100vh - 190px);
+  width: 100%;
+  background-color: $primary-color;
+}
+
+// ---------------------------------------------
+// Profile Section
+// ---------------------------------------------
+.profileSection {
+  //background-color: $primary-color;
+  background-image: url("/images/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  //---------------------------------------------
+  // Profile Image Section
+  //---------------------------------------------
+  .ProfileImageSection {
+    padding-bottom: 30px;
+  }
+
+  //---------------------------------------------
+  // Profile Info Section
+  //---------------------------------------------
+
+  //---------------------------------------------
+  // Social Media Buttons Section
+  //---------------------------------------------
+  .SocialButtonsSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  //---------------------------------------------
+  // Contact Buttons Section
+  //---------------------------------------------
+  .contactButtonsSection {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+//---------------------------------
+//Products section
+//---------------------------------
+
+
+  .productsText {
+    margin-bottom: $spacing-4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: $spacing-8;
+    padding-bottom: $spacing-8;
+    width: 100%;
+    height: auto;
+    //background-color: $secondary-color;
+    background-image: url("/images/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .productsTitle {
+    font-family: $font-primary;
+    font-size: 2.5rem;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+  }
+
+  .productsDescription {
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+//---------------------------------
+// Video section
+//---------------------------------
+
+.videoPlayer {
+  //background-color: $primary-color;
+  background-image: url("/images/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: $spacing-8;
+  padding-bottom: $spacing-8;
+  height: auto;
+}
+
+//---------------------------------
+// Payment section
+//---------------------------------
+
+.paymentInfo {
+  margin-bottom: $spacing-4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  //background-color: $secondary-color;
+  background-image: url("/images/background2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  padding-top: $spacing-8;
+  padding-bottom: $spacing-8;
+
+  .paymentTitle {
+    font-family: $font-primary;
+    font-size: 2.5rem;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $spacing-4;
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+  .paymentDescription {
+    color: $primary-color;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .bankInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $spacing-7;
+    width: 100%;
+    height: auto;
+    padding-top: $spacing-6;
+    border-radius: 50%;
+  }
+}
+
+//---------------------------------
+// QR code section
+//---------------------------------
+
+.qrCode {
+  background-color: $primary-color;
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-8;
+  width: 100%;
+  height: auto;
+  background-image: url("/images/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .titleQrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: $spacing-8;
+  }
+
+  .qrTitle {
+    margin-top: 10px;
+    color: $secondary-color;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: $font-primary;
+    @media (max-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+}
+
+//---------------------------------
+// WhatsApp section
+//---------------------------------
+
+.whatsappSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-4;
+}
+
+.whatsappSection1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $spacing-8;
+  padding-bottom: $spacing-4;
+  .WhatsAppButton {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
+}

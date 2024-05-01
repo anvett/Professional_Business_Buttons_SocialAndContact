@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+
+
+.customCarousel {
+    max-width: 1000px; // Limita el ancho máximo del carrusel
+    margin: auto;
+    .carousel-item {
+      display: flex;
+      justify-content: center;
+      align-items: center; // Centra verticalmente la imagen dentro del carrusel
+  
+      .customImage { // Clase aplicada directamente a <img>
+        max-width: 100%; // Limita la imagen a no expandirse más que el contenedor
+        max-height: 600px; // Límite de altura para todas las pantallas
+      }
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-image: none;
+  
+      &:after {
+        content: '❮'; // Carácter Unicode para la flecha
+        font-size: 40px;
+        color: white;
+      }
+    }
+  
+    .carousel-control-next-icon:after {
+      content: '❯';
+    }
+
+    .customCaption{
+      .captionTitle{
+        font-family: $font-secondary;
+        font-size: 2rem;
+        color: $light-color;
+        font-weight: bolder;
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    
+  }
+  
+  @media (min-width: 992px) { // Estilos específicos para pantallas grandes
+    .customCarousel .carousel-item .customImage {
+      max-height: 500px; // Ajusta esto según lo que consideres un tamaño razonable
+    }
+  }
+  

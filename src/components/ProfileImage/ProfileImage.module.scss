@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.profileImageContainer {
+  // background-color: $secondary-color;
+  // border-radius: 25px;
+  // overflow: hidden;
+  // position: relative;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // box-shadow: 0 25px 38px rgba(0, 0, 0, 0.1);
+  // 
+
+  width: 80%; // Usa el 100% del contenedor padre para máxima responsividad
+  max-width: 600px; // Máximo ancho para grandes pantallas
+  height: auto; // Altura automática para mantener la proporción
+  position: relative; // Necesario para el layout "fill" de Next/Image
+  aspect-ratio: 3 / 2; // Mantiene la relación de aspecto 3:2
+  margin-top: 4rem;
+  
+  .profileImage{
+    border-radius: 25px;
+  }
+}
