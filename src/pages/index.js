@@ -113,6 +113,12 @@ export default function testpage() {
       alt: "Instagram",
       name: "Instagram",
     },
+    {
+      href: "https://www.facebook.com/profile.php?id=61558674374046&mibextid=ZbWKwL",
+      icon: "/icons/facebook_b.png",
+      alt: "Facebook",
+      name: "Facebook",
+    },
     // Agrega más redes sociales según sea necesario
   ];
 
